@@ -1,0 +1,10 @@
+<h1>Salvando</h1>
+<form role="form" [formGroup]="form">
+  <div>
+    <textarea class="form-control" formControlName="texto" rows="6" placeholder="Texto para a galeria de fotos"></textarea>
+  </div>
+
+  <div>
+    <button type="submit" class="btn btn-default" [disabled]="form.invalid" (click)="salvar()">Salvar</button>
+  </div>
+</form>
